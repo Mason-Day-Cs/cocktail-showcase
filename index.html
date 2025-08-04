@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Showcase</title>
+  <style>
+    /* Reset some default margins */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    /* Header styling */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    /* Container holds the main content and centers it */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    /* Each cocktail section is styled as a card */
+    .cocktail {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 3rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    /* Image styling to maintain aspect ratio and responsive width */
+    .cocktail img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+    }
+    /* Text content styling */
+    .cocktail-content {
+      flex: 1;
+      padding: 1rem 2rem;
+    }
+    .cocktail-content h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+    }
+    .cocktail-content p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cocktail Showcase</h1>
+    <p>Discover unique cocktails crafted by <em>Mason Day</em></p>
+  </header>
+  <div class="container">
+    <!-- First cocktail section -->
+    <section class="cocktail">
+      <img src="images/yuzu.png" alt="Midnight Yuzu">
+      <div class="cocktail-content">
+        <h2>Midnight Yuzu&nbsp;</h2>
+        <p>
+          A clarified milk punch inspired by Eastern flavors and aesthetics
+          <br>
+          <br>
+          The Midnight Yuzu is a modern take on the clarified milk punch, built around Akashi Plum Whisky, lemon juice, jasmine green tea, and a homemade Asian pear syrup. 
+          After clarification with milk, the drink is finished with yuzu juice, butterfly pea flower–dyed orange bitters, and a touch of blue luster dust for a vibrant, midnight-blue glow.
+          
+          The result is smooth, citrus-forward, and delicately floral. A cocktail that balances bold visuals with subtle, layered flavor.
+          <br>
+          <br>
+          Tasting Notes:
+          Bright yuzu citrus, mellow plum, floral tea, and soft pear sweetness with a velvety texture.
+          <br>
+          <br>
+          This drink reflects my creative approach to mixology: thoughtful, visually striking, and rooted in cultural inspiration.
+        </p>
+      </div>
+    </section>
+    <!-- Second cocktail section -->
+    <section class="cocktail">
+      <img src="images/glow.png" alt="Kingston Glow">
+      <div class="cocktail-content">
+        <h2>Kingston Glow&nbsp;</h2>
+        <p>
+          A golden cocktail inspired by the bold flavors of the Caribbean
+          <br>
+          <br>
+          The Kingston Glow is a bright, spice forward cocktail that draws inspiration from the vibrant spirit of the Caribbean. 
+          Built on a base of white rum, it’s balanced with lemon juice and demerara syrup, offering a rich yet refreshing foundation.
+          
+          The defining element is my house-made jerk syrup, a bold infusion of cumin, allspice, ginger, turmeric, and Scotch bonnet pepper. 
+          Together, these ingredients create a warm, earthy profile with just the right touch of heat, all wrapped in a glowing golden hue.
+          <br>
+          <br>
+          Tasting Notes:
+          Citrus brightness, warming spices, subtle sweetness, and a lingering, gentle heat.
+          <br>
+          <br>
+          This cocktail is a celebration of bold flavors, cultural roots, and creative expression. A drink that’s as lively as it looks.
+        </p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    © <span id="year"></span> <em>Mason Day</em>. All rights reserved.
+  </footer>
+  <script>
+    // Dynamically set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
